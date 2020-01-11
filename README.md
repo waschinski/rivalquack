@@ -2,6 +2,10 @@
 
 An unofficial solo variant by Marek Tupy for The Quacks of Quedlinburg by Wolfgang Warsch implemented by Andreas Waschinski using Quasar Framework
 
+A web demo of the project can be found at my [Github page](https://waschinski.github.io/rivalquack/).
+
+If you want to build it on your own, clone this repository and follow these steps:
+
 ## Install the dependencies
 
 ```bash
