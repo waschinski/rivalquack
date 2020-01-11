@@ -32,7 +32,7 @@ export function setCurrentRoundData(state, payload) {
       data => data.id === "L" + state.currentRoundLeftCard
     ),
     rats = leftCardData.ratstone,
-    currentCauldronSpace = state.dropletPosition + rats + payload;
+    currentCauldronSpace = state.dropletPosition + rats + payload + 1;
   state.currentRoundData = state.cauldronData.find(
     data => data.id === currentCauldronSpace
   );
