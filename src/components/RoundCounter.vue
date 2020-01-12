@@ -1,10 +1,9 @@
 <template>
-  <div class="row" id="roundcounter">
-    <div id="leftcard">{{ leftcard }}</div>
+  <div class="row roundcounter">
+    <div id="round">{{ $t("round") }} {{ round }}</div>
     <q-space />
-    <div id="">{{ $t("round") }}: {{ round }}</div>
-    <q-space />
-    <div id="rightcard">{{ rightcard }}</div>
+    <div class="card">{{ leftcard }}</div>
+    <div class="card">{{ rightcard }}</div>
   </div>
 </template>
 

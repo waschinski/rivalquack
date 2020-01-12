@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="difficulty select">{{ $t("selectlevel") }}</div>
+    <div class="difficulty">{{ $t("selectlevel") }}</div>
     <div class="row justify-center">
       <div class="difficulty level" v-on:click="setDifficulty(1)">I</div>
       <div class="difficulty level" v-on:click="setDifficulty(2)">II</div>

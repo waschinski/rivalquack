@@ -1,65 +1,61 @@
 // app global css in Sass form
 
-body
-  font-family: "Courier New", Courier, monospace
-
-#body
+.body
   padding: 10px
 
-#header
-  max-width: 420px
+.header-image
+  height: 100%
+  z-index: -1
+  opacity: 0.2
+  filter: grayscale(100%)
 
-#title1, #title2, .difficulty
+.header
   font-weight: bold
-  font-size: 2em
+  font-size: 1.6em
 
-#title1
-  line-height: 0.5em
-
-#title2
-  text-align: right
-
-.select
-  margin-top: 40px
+.title
+  font-weight: bold
+  font-size: 1.4em
 
 .difficulty
-  text-align: center
-
-#subtitle
-  font-size: 1em
-
-#difficultylevel, #victorypoints, #rubies, #droplet, #ratstone
-  font-size: 2em
-
-#rattails, #beatthat
+  font-weight: bold
   font-size: 1.6em
   text-align: center
 
-#victorypoints, #rubies
+.difficultylevel, .victorypoints
+  font-size: 1.4em
+
+.victorypoints
   font-weight: bold
+
+#rattails, #beatthat
+  font-size: 1.4em
+  text-align: center
+
+#beatthat
+  padding-top: 10px
 
 .rubies
-  color: red
-  font-weight: bold
-  font-size: 64px
-  line-height: 54px
-  margin-bottom: -12px
+  width: 24px
+  vertical-align: middle
 
-#droplet, #ratstone
-  color: #ccc
-  font-size: 1.5em
-  line-height: 2em
+.droplet, .ratstone
+  color: #cccccc
+  font-size: 1em
 
-#roundcounter
-  border: 3px solid black
-  border-radius: 12px
-  background-color: #ccc
+.ratstone
+  padding-bottom: 20px
+
+.roundcounter
+  border: 1px solid #cccccc
+  background-color: #efefef
   text-align: center
-  font-size: 2em
-  font-weight: bold
+  font-size: 1.4em
+  padding: 6px 10px
 
 .level
   font-size: 2em
+  font-family: "Courier New", Courier, monospace
   margin: 0 20px
   cursor: pointer
   -webkit-user-select: none
@@ -71,26 +67,32 @@ body
 .level:hover
   color: blue
 
+.levelsmall
+  font-size: 1.2em
+  line-height: 1em
+  font-family: "Courier New", Courier, monospace
+
 .blackchips
   font-weight: bold
   font-size: 80px
   line-height: 40px
-  letter-spacing: -6px
-  margin-left: -6px
+  letter-spacing: -2px
 
-#cauldronspace
-  border: 2px solid black
-  border-radius: 6px
-  background-color: #eee
+.cauldronspace
+  border: 1px solid #cccccc
+  background-color: #efefef
   text-align: center
-  font-size: 2em
+  font-size: 1.4em
   font-weight: bold
-  padding: 0px 10px
-  margin: 10px 54px
+  padding: 6px 10px
 
-#roundnav
+.ruby
+  padding-top: 12px
+
+.roundnav
   text-align: center
+  padding-top: 20px
 
-#leftcard, #rightcard
+.card
   color: #bbb
-  margin: 0 10px
+  margin-left: 10px

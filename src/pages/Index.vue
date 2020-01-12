@@ -1,7 +1,6 @@
 <template>
-  <q-page class="flex flex-center">
-    <div id="body">
-      <rival-header v-if="newGame === true"></rival-header>
+  <q-page class="q-pa-sm" style="max-width:420px; margin-left:auto; margin-right:auto;">
+    <div class="body">
       <select-difficulty v-if="newGame === true"></select-difficulty>
       <rival-details v-if="newGame === false"></rival-details>
       <round-counter v-if="newGame === false"></round-counter>
@@ -12,7 +11,6 @@
 </template>
 
 <script>
-import RivalHeader from "../components/RivalHeader.vue";
 import SelectDifficulty from "../components/SelectDifficulty.vue";
 import RivalDetails from "../components/RivalDetails.vue";
 import RoundCounter from "../components/RoundCounter.vue";
@@ -23,7 +21,6 @@ import { mapGetters } from "vuex";
 export default {
   name: "PageIndex",
   components: {
-    RivalHeader,
     SelectDifficulty,
     RivalDetails,
     RoundCounter,

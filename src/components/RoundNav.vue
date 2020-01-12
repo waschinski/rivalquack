@@ -1,9 +1,9 @@
 <template>
-  <div id="roundnav">
+  <div class="roundnav">
     <q-btn
       color="primary"
-      class="q-px-lg q-py-xs"
-      size="lg"
+      class="q-px-md q-py-xs"
+      size="md"
       :label="label"
       v-on:click="buttonclick"
     />

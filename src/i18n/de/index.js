@@ -1,19 +1,22 @@
 export default {
-  variantby: "Eine inoffizielle Solo Variante von",
-  quacksby: "für Die Quacksalber von Quedlinburg von",
-  implementedby: "implementiert von",
-  titleline1: "Der Rivale von",
-  titleline2: "Quedlinburg",
-  selectlevel: "Wähle Schwierigkeit",
-  vp: "SP",
+  title: "Der Rivale von Quedlinburg",
+  variantby: "Diese App basiert auf einer inoffizielle Solovariante von",
+  quacksby: 'für das Brettspiel "Die Quacksalber von Quedlinburg" von',
+  implementedby: "Die App wurde entwickelt von",
+  selectlevel: "Wähle Schwierigkeitsstufe",
+  vp: "Siegpunkte",
   level: "Stufe",
   droplet: "Tropfen",
   ratstone: "Rattenstein",
-  addrattails: "Rattenschwänze",
-  beatrival: "Schlägst du den Rivalen?",
+  addrattails: "Rattenschwänze bei Führung",
+  beatrival: "Schlägst du deinen Rivalen?",
   score: "Wert",
   round: "Runde",
   newgame: "Neues Spiel",
   endgame: "Spiel beenden",
-  nextround: "Nächste Runde"
+  nextround: "Runde beenden",
+  play: "Spielen",
+  info: "Info",
+  github:
+    "Dieses Projekt ist Open Source unter der MIT Lizenz und wurde auf Github veröffentlicht"
 };
