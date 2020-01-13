@@ -2,7 +2,13 @@
   <q-layout view="hHh lpR fFf">
     <q-header class="bg-primary text-white">
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="leftDrawerOpen = !leftDrawerOpen" />
+        <q-btn
+          dense
+          flat
+          round
+          icon="menu"
+          @click="leftDrawerOpen = !leftDrawerOpen"
+        />
       </q-toolbar>
       <div class="q-px-lg q-pt-none q-mb-md">
         <div class="header">{{ $t("title") }}</div>
@@ -25,6 +31,12 @@
               <q-icon name="person" />
             </q-item-section>
             <q-item-section>{{ $t("play") }}</q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/rules" exact>
+            <q-item-section avatar>
+              <q-icon name="school" />
+            </q-item-section>
+            <q-item-section>{{ $t("solorules") }}</q-item-section>
           </q-item>
           <q-item clickable v-ripple to="/info" exact>
             <q-item-section avatar>

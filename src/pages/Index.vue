@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-pa-sm" style="max-width:420px; margin-left:auto; margin-right:auto;">
+  <q-page class="q-pa-sm app-page">
     <div class="body">
       <select-difficulty v-if="newGame === true"></select-difficulty>
       <rival-details v-if="newGame === false"></rival-details>
