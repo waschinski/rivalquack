@@ -1,6 +1,6 @@
 {
   "name": "rivalquack",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An unofficial solo variant by Marek Tupy for Quacks of Quedlinburg by Wolfgang Warsch",
   "productName": "Rival Quack",
   "cordovaId": "org.cordova.quasar.app",
