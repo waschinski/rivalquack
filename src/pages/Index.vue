@@ -1,12 +1,12 @@
 <template>
   <q-page class="q-pa-sm app-page">
     <div class="body">
-      <select-difficulty v-if="newGame === true"></select-difficulty>
-      <rival-details v-if="newGame === false && gameover === false"></rival-details>
-      <round-counter v-if="newGame === false && gameover === false"></round-counter>
-      <round-details v-if="newGame === false && gameover === false"></round-details>
-      <round-nav v-if="newGame === false && gameover === false"></round-nav>
-      <results v-if="newGame === false  && gameover === true"></results>
+      <select-difficulty v-if="newGame === true" />
+      <rival-details v-if="newGame === false && gameover === false" />
+      <round-counter v-if="newGame === false && gameover === false" />
+      <round-details v-if="newGame === false && gameover === false" />
+      <round-nav v-if="newGame === false && gameover === false" />
+      <results v-if="newGame === false  && gameover === true" />
     </div>
   </q-page>
 </template>
