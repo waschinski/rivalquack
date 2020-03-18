@@ -22,25 +22,15 @@ export default {
   },
   computed: {
     ...mapGetters({
-      round: "gamedata/getRound",
-      gameover: "gamedata/isGameOver"
+      round: "gamedata/getRound"
     })
   },
   methods: {
     buttonclick() {
-      if (this.gameover === true) {
-        this.$store.commit("gamedata/setNewGame");
-      } else {
-        this.$root.$emit("nextButtonClicked");
-      }
+      this.$root.$emit("nextButtonClicked");
     }
   },
   watch: {
-    gameover: function(isGameOver) {
-      if (isGameOver === true) {
-        this.label = this.$t("newgame");
-      }
-    },
     round: function(newRound) {
       if (newRound === 9) {
         this.label = this.$t("endgame");

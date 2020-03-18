@@ -2,10 +2,11 @@
   <q-page class="q-pa-sm app-page">
     <div class="body">
       <select-difficulty v-if="newGame === true"></select-difficulty>
-      <rival-details v-if="newGame === false"></rival-details>
-      <round-counter v-if="newGame === false"></round-counter>
-      <round-details v-if="newGame === false"></round-details>
-      <round-nav v-if="newGame === false"></round-nav>
+      <rival-details v-if="newGame === false && gameover === false"></rival-details>
+      <round-counter v-if="newGame === false && gameover === false"></round-counter>
+      <round-details v-if="newGame === false && gameover === false"></round-details>
+      <round-nav v-if="newGame === false && gameover === false"></round-nav>
+      <results v-if="newGame === false  && gameover === true"></results>
     </div>
   </q-page>
 </template>
@@ -16,6 +17,7 @@ import RivalDetails from "../components/RivalDetails.vue";
 import RoundCounter from "../components/RoundCounter.vue";
 import RoundDetails from "../components/RoundDetails.vue";
 import RoundNav from "../components/RoundNav.vue";
+import Results from "../components/Results.vue";
 import { mapGetters } from "vuex";
 
 export default {
@@ -25,13 +27,15 @@ export default {
     RivalDetails,
     RoundCounter,
     RoundDetails,
-    RoundNav
+    RoundNav,
+    Results
   },
   computed: {
     ...mapGetters({
       round: "gamedata/getRound",
       difficultyLevel: "gamedata/getDifficultyLevel",
-      newGame: "gamedata/startNewGame"
+      newGame: "gamedata/startNewGame",
+      gameover: "gamedata/isGameOver"
     })
   },
   created() {

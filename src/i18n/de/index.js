@@ -48,5 +48,6 @@ export default {
   howtoendround: 'Drücke den "Runde beenden" Knopf.',
   endofgame: "Spielende",
   howtoendgame:
-    'Am Ende von Runde 9, drücke einfach den "Spiel beenden" Knopf. Dein Rivale wird daraufhin seine Wertungspunkte ausgeben und seine finalen Gesamtpunkte werden angezeigt.'
+    'Am Ende von Runde 9, drücke einfach den "Spiel beenden" Knopf. Dein Rivale wird daraufhin seine Wertungspunkte ausgeben und seine finalen Gesamtpunkte werden angezeigt.',
+  endresult: "Endergebnis deines Rivalen"
 };

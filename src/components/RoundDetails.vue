@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row">
-      <div class="blackchips">{{ "&bull;".repeat(currentBlackChips) }}</div>
+      <q-icon v-for="n in currentBlackChips" v-bind:key="n" name="fas fa-circle" class="blackchips" />
       <q-space />
       <div class="ratstone">{{ $t("ratstone") }} @ {{ currentRatstonePos }}</div>
     </div>
@@ -18,9 +18,9 @@
             <div id="vp">{{ $t("vp") }}: {{ currentRoundData.vp }}</div>
           </div>
           <q-space />
-          <div class="ruby" v-if="currentRoundData.ruby">
-            <img src="statics/ruby.png" class="rubies" />
-          </div>
+          <div v-if="currentRoundData.ruby" style="display: inline">
+            <q-icon name="fas fa-gem" class="ruby text-red" style="margin-top: 20px" />
+           </div>
         </div>
       </div>
     </div>

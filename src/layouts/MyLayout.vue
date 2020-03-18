@@ -6,7 +6,7 @@
           dense
           flat
           round
-          icon="menu"
+          icon="fas fa-bars"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
       </q-toolbar>
@@ -28,19 +28,19 @@
         <q-list padding>
           <q-item clickable v-ripple to="/" exact>
             <q-item-section avatar>
-              <q-icon name="person" />
+              <q-icon name="fas fa-user" />
             </q-item-section>
             <q-item-section>{{ $t("play") }}</q-item-section>
           </q-item>
           <q-item clickable v-ripple to="/rules" exact>
             <q-item-section avatar>
-              <q-icon name="school" />
+              <q-icon name="fas fa-book" />
             </q-item-section>
             <q-item-section>{{ $t("solorules") }}</q-item-section>
           </q-item>
           <q-item clickable v-ripple to="/info" exact>
             <q-item-section avatar>
-              <q-icon name="info" />
+              <q-icon name="fas  fa-info-circle" />
             </q-item-section>
             <q-item-section>{{ $t("info") }}</q-item-section>
           </q-item>

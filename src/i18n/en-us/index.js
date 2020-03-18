@@ -47,5 +47,6 @@ export default {
   howtoendround: 'Click the "End Round" button.',
   endofgame: "End of game",
   howtoendgame:
-    'At the end of round 9, just hit the "End Game" button. Your rival will then spend his scoring value and the final victory point result will be shown.'
+    'At the end of round 9, just hit the "End Game" button. Your rival will then spend his scoring value and the final victory point result will be shown.',
+  endresult: "Your rivals end result"
 };
