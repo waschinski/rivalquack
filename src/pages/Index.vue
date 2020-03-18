@@ -6,7 +6,7 @@
       <round-counter v-if="newGame === false && gameover === false" />
       <round-details v-if="newGame === false && gameover === false" />
       <round-nav v-if="newGame === false && gameover === false" />
-      <results v-if="newGame === false  && gameover === true" />
+      <results v-if="newGame === false && gameover === true" />
     </div>
   </q-page>
 </template>

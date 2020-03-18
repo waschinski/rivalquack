@@ -16,7 +16,8 @@
         class="q-px-md q-py-xs"
         size="md"
         v-on:click="buttonclick"
-      >{{ $t('newgame') }}</q-btn>
+        >{{ $t("newgame") }}</q-btn
+      >
     </div>
   </div>
 </template>
@@ -44,6 +45,6 @@ export default {
     buttonclick() {
       this.$store.commit("gamedata/setNewGame");
     }
-  },
+  }
 };
 </script>

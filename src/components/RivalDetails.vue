@@ -3,7 +3,13 @@
     <div class="row">
       <div class="victorypoints">{{ $t("vp") }}: {{ victoryPoints }}</div>
       <q-space />
-      <q-icon name="fas fa-gem" v-for="n in rubies" v-bind:key="n" class="ruby text-red" style="margin-top: 4px" />
+      <q-icon
+        name="fas fa-gem"
+        v-for="n in rubies"
+        v-bind:key="n"
+        class="ruby text-red"
+        style="margin-top: 4px"
+      />
       <q-space />
       <div class="difficulty difficultylevel">
         {{ $t("level") }}
