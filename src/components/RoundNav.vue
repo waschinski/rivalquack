@@ -17,27 +17,27 @@ export default {
   name: "RoundNav",
   data() {
     return {
-      label: this.$t("nextround")
+      label: this.$t("nextround"),
     };
   },
   computed: {
     ...mapGetters({
-      round: "gamedata/getRound"
-    })
+      round: "gamedata/getRound",
+    }),
   },
   methods: {
     buttonclick() {
       this.$root.$emit("nextButtonClicked");
-    }
+    },
   },
   watch: {
-    round: function(newRound) {
+    round: function (newRound) {
       if (newRound === 9) {
         this.label = this.$t("endgame");
       } else {
         this.label = this.$t("nextround");
       }
-    }
-  }
+    },
+  },
 };
 </script>

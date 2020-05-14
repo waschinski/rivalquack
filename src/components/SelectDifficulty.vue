@@ -16,10 +16,10 @@ export default {
     return {};
   },
   methods: {
-    setDifficulty: function(difficultyLevel) {
+    setDifficulty: function (difficultyLevel) {
       this.$store.commit("gamedata/setDifficultyLevel", difficultyLevel);
       this.$store.commit("gamedata/startGame");
-    }
-  }
+    },
+  },
 };
 </script>

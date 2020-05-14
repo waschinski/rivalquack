@@ -19,8 +19,8 @@ export default {
     ...mapGetters({
       round: "gamedata/getRound",
       leftcard: "gamedata/getLeftCardName",
-      rightcard: "gamedata/getRightCardName"
-    })
-  }
+      rightcard: "gamedata/getRightCardName",
+    }),
+  },
 };
 </script>

@@ -36,6 +36,6 @@
 <script>
 export default {
   name: "InfoPage",
-  components: {}
+  components: {},
 };
 </script>

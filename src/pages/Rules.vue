@@ -65,6 +65,6 @@
 <script>
 export default {
   name: "RulesPage",
-  components: {}
+  components: {},
 };
 </script>

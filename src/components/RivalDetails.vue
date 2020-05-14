@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%">
+  <div style="width: 100%;">
     <div class="row">
       <div class="victorypoints">{{ $t("vp") }}: {{ victoryPoints }}</div>
       <q-space />
@@ -8,7 +8,7 @@
         v-for="n in rubies"
         v-bind:key="n"
         class="ruby text-red"
-        style="margin-top: 4px"
+        style="margin-top: 4px;"
       />
       <q-space />
       <div class="difficulty difficultylevel">
@@ -36,11 +36,11 @@ export default {
       victoryPoints: "gamedata/getVictoryPoints",
       difficultyLevel: "gamedata/getDifficultyLevel",
       dropletPosition: "gamedata/getDropletPosition",
-      rubies: "gamedata/getRubies"
+      rubies: "gamedata/getRubies",
     }),
-    fancyLevel: function() {
+    fancyLevel: function () {
       return "I".repeat(this.difficultyLevel);
-    }
-  }
+    },
+  },
 };
 </script>

@@ -33,11 +33,11 @@
             <div id="vp">{{ $t("vp") }}: {{ currentRoundData.vp }}</div>
           </div>
           <q-space />
-          <div v-if="currentRoundData.ruby" style="display: inline">
+          <div v-if="currentRoundData.ruby" style="display: inline;">
             <q-icon
               name="fas fa-gem"
               class="ruby text-red"
-              style="margin-top: 20px"
+              style="margin-top: 20px;"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ export default {
   name: "RoundDetails",
   data() {
     return {
-      rattails: 0
+      rattails: 0,
     };
   },
   computed: {
@@ -61,25 +61,25 @@ export default {
       round: "gamedata/getRound",
       currentRoundData: "gamedata/getCurrentRoundData",
       currentRatstonePos: "gamedata/getCurrentRatstonePos",
-      currentBlackChips: "gamedata/getCurrentBlackChips"
-    })
+      currentBlackChips: "gamedata/getCurrentBlackChips",
+    }),
   },
-  mounted: function() {
-    this.$nextTick(function() {
+  mounted: function () {
+    this.$nextTick(function () {
       this.rattails = 0;
       this.setcauldronposition();
     });
   },
   watch: {
-    round: function() {
+    round: function () {
       this.rattails = 0;
       this.setcauldronposition();
-    }
+    },
   },
   methods: {
-    setcauldronposition: function() {
+    setcauldronposition: function () {
       this.$store.commit("gamedata/setCurrentRoundData", this.rattails);
-    }
-  }
+    },
+  },
 };
 </script>

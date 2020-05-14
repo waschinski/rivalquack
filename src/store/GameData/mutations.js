@@ -26,15 +26,16 @@ export function setNewGame(state) {
 
 export function setCurrentRoundData(state, payload) {
   const leftCardDataObj = state.cardData.find(
-      data => data.level === state.difficultyLevel
+      (data) => data.level === state.difficultyLevel
     ),
     leftCardData = leftCardDataObj.cards.find(
-      data => data.id === "L" + state.currentRoundLeftCard
+      (data) => data.id === "L" + state.currentRoundLeftCard
     ),
     rats = leftCardData.ratstone,
     currentCauldronSpace = state.dropletPosition + rats + payload + 1;
   state.currentRoundData = state.cauldronData.find(
-    data => data.id === (currentCauldronSpace > 53 ? 53 : currentCauldronSpace)
+    (data) =>
+      data.id === (currentCauldronSpace > 53 ? 53 : currentCauldronSpace)
   );
 }
 
@@ -69,7 +70,7 @@ export function randomizeCardOrder(state) {
     const j = Math.floor(Math.random() * (i + 1));
     [anothercardorder[i], anothercardorder[j]] = [
       anothercardorder[j],
-      anothercardorder[i]
+      anothercardorder[i],
     ];
   }
   // Draw first card and add to the bottom of the deck
@@ -96,10 +97,10 @@ export function endRound(state) {
   // move Droplet
   if (state.round < 9) {
     const rightCardDataObj = state.cardData.find(
-        data => data.level === state.difficultyLevel
+        (data) => data.level === state.difficultyLevel
       ),
       rightCardData = rightCardDataObj.cards.find(
-        data => data.id === "R" + state.currentRoundRightCard
+        (data) => data.id === "R" + state.currentRoundRightCard
       ),
       droplet = rightCardData.droplet;
     state.dropletPosition = state.dropletPosition + droplet;

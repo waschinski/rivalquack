@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%">
+  <div style="width: 100%;">
     <div class="difficulty">{{ $t("endresult") }}</div>
     <div class="row justify-center">
       <div class="difficulty difficultylevel">
@@ -29,22 +29,22 @@ export default {
   name: "Results",
   data() {
     return {
-      label: this.$t("endgame")
+      label: this.$t("endgame"),
     };
   },
   computed: {
     ...mapGetters({
       victoryPoints: "gamedata/getVictoryPoints",
-      difficultyLevel: "gamedata/getDifficultyLevel"
+      difficultyLevel: "gamedata/getDifficultyLevel",
     }),
-    fancyLevel: function() {
+    fancyLevel: function () {
       return "I".repeat(this.difficultyLevel);
-    }
+    },
   },
   methods: {
     buttonclick() {
       this.$store.commit("gamedata/setNewGame");
-    }
-  }
+    },
+  },
 };
 </script>

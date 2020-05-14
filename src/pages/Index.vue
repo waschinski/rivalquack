@@ -28,15 +28,15 @@ export default {
     RoundCounter,
     RoundDetails,
     RoundNav,
-    Results
+    Results,
   },
   computed: {
     ...mapGetters({
       round: "gamedata/getRound",
       difficultyLevel: "gamedata/getDifficultyLevel",
       newGame: "gamedata/startNewGame",
-      gameover: "gamedata/isGameOver"
-    })
+      gameover: "gamedata/isGameOver",
+    }),
   },
   created() {
     this.$root.$on("nextButtonClicked", this.nextRound);
@@ -52,7 +52,7 @@ export default {
       } else {
         this.$store.commit("gamedata/finishGame");
       }
-    }
-  }
+    },
+  },
 };
 </script>

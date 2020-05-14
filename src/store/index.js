@@ -14,15 +14,15 @@ Vue.use(Vuex);
  * with the Store instance.
  */
 
-export default function(/* { ssrContext } */) {
+export default function () {
   const Store = new Vuex.Store({
     modules: {
-      gamedata
+      gamedata,
     },
 
     // enable strict mode (adds overhead!)
     // for dev mode only
-    strict: process.env.DEV
+    strict: process.env.DEV,
   });
 
   return Store;

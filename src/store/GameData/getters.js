@@ -24,10 +24,10 @@ export function getCurrentRoundData(state) {
 
 export function getCurrentRatstonePos(state) {
   const leftCardDataObj = state.cardData.find(
-      data => data.level === state.difficultyLevel
+      (data) => data.level === state.difficultyLevel
     ),
     leftCardData = leftCardDataObj.cards.find(
-      data => data.id === "L" + state.currentRoundLeftCard
+      (data) => data.id === "L" + state.currentRoundLeftCard
     ),
     rats = leftCardData.ratstone;
   return state.dropletPosition + rats;
@@ -35,10 +35,10 @@ export function getCurrentRatstonePos(state) {
 
 export function getCurrentBlackChips(state) {
   const rightCardDataObj = state.cardData.find(
-      data => data.level === state.difficultyLevel
+      (data) => data.level === state.difficultyLevel
     ),
     rightCardData = rightCardDataObj.cards.find(
-      data => data.id === "R" + state.currentRoundRightCard
+      (data) => data.id === "R" + state.currentRoundRightCard
     ),
     blackchips = rightCardData.blackchips;
   return blackchips;
