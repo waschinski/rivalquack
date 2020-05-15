@@ -11,14 +11,14 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from "vuex"
 
 export default {
   name: "RoundNav",
   data() {
     return {
       label: this.$t("nextround"),
-    };
+    }
   },
   computed: {
     ...mapGetters({
@@ -27,17 +27,17 @@ export default {
   },
   methods: {
     buttonclick() {
-      this.$root.$emit("nextButtonClicked");
+      this.$root.$emit("nextButtonClicked")
     },
   },
   watch: {
     round: function (newRound) {
       if (newRound === 9) {
-        this.label = this.$t("endgame");
+        this.label = this.$t("endgame")
       } else {
-        this.label = this.$t("nextround");
+        this.label = this.$t("nextround")
       }
     },
   },
-};
+}
 </script>

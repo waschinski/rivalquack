@@ -1,12 +1,12 @@
 // app global css in Sass form
 
 .body
-  padding: 10px
 
 .app-page
   max-width: 420px
   margin-left: auto
   margin-right: auto
+  background-image: url("../statics/parchment.png")
 
 .app-page ol
   padding-left: 16px
@@ -22,6 +22,27 @@
   font-weight: bold
   font-size: 1.6em
 
+.rival
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 140px
+  height: 280px
+  z-index: 3
+
+.magnifier
+  position: absolute
+  left: 100px
+  bottom: 80px
+  height: 120px
+  z-index: 2
+
+.space
+  position: absolute
+  left: 101px
+  bottom: 44px
+  z-index: 1
+
 .title
   font-weight: bold
   font-size: 1.4em
@@ -31,18 +52,46 @@
   font-size: 1.6em
   text-align: center
 
+.select
+  padding-top: 20px  
+
 .difficultylevel, .victorypoints
   font-size: 1.4em
 
 .victorypoints
   font-weight: bold
 
-#rattails, #beatthat
+#rattails
+  width: 260px
   font-size: 1.4em
-  text-align: center
+  line-height: 1.2em
+  padding-left: 10px
 
 #beatthat
-  padding-top: 10px
+  font-size: 1.4em
+  text-align: center
+  position: absolute
+  left: 0
+  bottom: 140px
+  width: 100%
+  height: 120px
+
+.ruby
+  position: absolute
+  left: 160px
+  bottom: 20px
+
+.blackchip1
+  position: absolute
+  left: 290px
+  bottom: 25px
+  z-index: 2
+
+.blackchip2
+  position: absolute
+  left: 310px
+  bottom: 40px
+  z-index: 1
 
 .rubies
   width: 24px
@@ -55,12 +104,10 @@
 .ratstone
   padding-bottom: 20px
 
-.roundcounter
-  border: 1px solid #cccccc
-  background-color: #efefef
-  text-align: center
-  font-size: 1.4em
-  padding: 6px 10px
+.round
+  position: absolute
+  right: 10px
+  top: 0
 
 .level
   font-size: 2em
@@ -81,11 +128,6 @@
   line-height: 1em
   font-family: "Courier New", Courier, monospace
 
-.blackchips
-  font-size: 24px
-  line-height: 40px
-  margin: 4px 2px
-
 .cauldronspace
   border: 1px solid #cccccc
   background-color: #efefef
@@ -94,16 +136,9 @@
   font-weight: bold
   padding: 6px 10px
 
-.ruby
-  font-size: 24px
-
 .roundnav
   text-align: center
   padding-top: 20px
-
-.card
-  color: #bbb
-  margin-left: 10px
 
 .favicon
   color: white

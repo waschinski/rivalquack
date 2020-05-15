@@ -597,5 +597,5 @@ export default function () {
         ruby: false,
       },
     ],
-  };
+  }
 }

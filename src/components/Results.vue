@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100%;">
-    <div class="difficulty">{{ $t("endresult") }}</div>
+    <div class="difficulty select">{{ $t("endresult") }}</div>
     <div class="row justify-center">
       <div class="difficulty difficultylevel">
         {{ $t("level") }}
@@ -23,14 +23,14 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from "vuex"
 
 export default {
   name: "Results",
   data() {
     return {
       label: this.$t("endgame"),
-    };
+    }
   },
   computed: {
     ...mapGetters({
@@ -38,13 +38,13 @@ export default {
       difficultyLevel: "gamedata/getDifficultyLevel",
     }),
     fancyLevel: function () {
-      return "I".repeat(this.difficultyLevel);
+      return "I".repeat(this.difficultyLevel)
     },
   },
   methods: {
     buttonclick() {
-      this.$store.commit("gamedata/setNewGame");
+      this.$store.commit("gamedata/setNewGame")
     },
   },
-};
+}
 </script>

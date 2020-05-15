@@ -1,16 +1,14 @@
 <template>
   <div>
-    <div class="row">
-      <q-icon
-        v-for="n in currentBlackChips"
-        v-bind:key="n"
-        name="fas fa-circle"
-        class="blackchips"
+    <div class="magnifier">
+      <img src="statics/magnifier.png" style="width: 240px;" />
+    </div>
+    <div class="space">
+      <img
+        class="space"
+        :src="'statics/space_' + currentRoundData.id + '.png'"
+        style="width: 116px;"
       />
-      <q-space />
-      <div class="ratstone">
-        {{ $t("ratstone") }} @ {{ currentRatstonePos }}
-      </div>
     </div>
     <div class="column">
       <div id="rattails">{{ $t("addrattails") }}: {{ rattails }}</div>
@@ -19,42 +17,31 @@
           v-model="rattails"
           markers
           :min="0"
-          :max="9"
+          :max="5"
           v-on:change="setcauldronposition"
+          style="width: 240px;"
         />
       </div>
-      <div id="beatthat">{{ $t("beatrival") }}</div>
-      <div class="cauldronspace">
-        <div class="row">
-          <div class="column">
-            <div id="score" class="text">
-              {{ $t("score") }}: {{ currentRoundData.score }}
-            </div>
-            <div id="vp">{{ $t("vp") }}: {{ currentRoundData.vp }}</div>
-          </div>
-          <q-space />
-          <div v-if="currentRoundData.ruby" style="display: inline;">
-            <q-icon
-              name="fas fa-gem"
-              class="ruby text-red"
-              style="margin-top: 20px;"
-            />
-          </div>
-        </div>
-      </div>
+    </div>
+    <div id="beatthat">{{ $t("beatrival") }}</div>
+    <div class="blackchip1">
+      <img src="statics/blackchip.png" v-if="currentBlackChips > 0" />
+    </div>
+    <div class="blackchip2">
+      <img src="statics/blackchip.png" v-if="currentBlackChips > 1" />
     </div>
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from "vuex"
 
 export default {
   name: "RoundDetails",
   data() {
     return {
       rattails: 0,
-    };
+    }
   },
   computed: {
     ...mapGetters({
@@ -66,20 +53,20 @@ export default {
   },
   mounted: function () {
     this.$nextTick(function () {
-      this.rattails = 0;
-      this.setcauldronposition();
-    });
+      this.rattails = 0
+      this.setcauldronposition()
+    })
   },
   watch: {
     round: function () {
-      this.rattails = 0;
-      this.setcauldronposition();
+      this.rattails = 0
+      this.setcauldronposition()
     },
   },
   methods: {
     setcauldronposition: function () {
-      this.$store.commit("gamedata/setCurrentRoundData", this.rattails);
+      this.$store.commit("gamedata/setCurrentRoundData", this.rattails)
     },
   },
-};
+}
 </script>

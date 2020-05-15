@@ -1,25 +1,25 @@
 export function getVictoryPoints(state) {
-  return state.victoryPoints;
+  return state.victoryPoints
 }
 
 export function getDifficultyLevel(state) {
-  return state.difficultyLevel;
+  return state.difficultyLevel
 }
 
 export function getRubies(state) {
-  return state.rubies;
+  return state.rubies
 }
 
 export function getDropletPosition(state) {
-  return state.dropletPosition;
+  return state.dropletPosition
 }
 
 export function getRound(state) {
-  return state.round;
+  return state.round
 }
 
 export function getCurrentRoundData(state) {
-  return state.currentRoundData;
+  return state.currentRoundData
 }
 
 export function getCurrentRatstonePos(state) {
@@ -29,8 +29,8 @@ export function getCurrentRatstonePos(state) {
     leftCardData = leftCardDataObj.cards.find(
       (data) => data.id === "L" + state.currentRoundLeftCard
     ),
-    rats = leftCardData.ratstone;
-  return state.dropletPosition + rats;
+    rats = leftCardData.ratstone
+  return state.dropletPosition + rats
 }
 
 export function getCurrentBlackChips(state) {
@@ -40,22 +40,22 @@ export function getCurrentBlackChips(state) {
     rightCardData = rightCardDataObj.cards.find(
       (data) => data.id === "R" + state.currentRoundRightCard
     ),
-    blackchips = rightCardData.blackchips;
-  return blackchips;
+    blackchips = rightCardData.blackchips
+  return blackchips
 }
 
 export function isGameOver(state) {
-  return state.gameOver;
+  return state.gameOver
 }
 
 export function startNewGame(state) {
-  return state.newGame;
+  return state.newGame
 }
 
 export function getLeftCardName(state) {
-  return "L" + state.currentRoundLeftCard;
+  return "L" + state.currentRoundLeftCard
 }
 
 export function getRightCardName(state) {
-  return "R" + state.currentRoundRightCard;
+  return "R" + state.currentRoundRightCard
 }
