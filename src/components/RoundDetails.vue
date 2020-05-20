@@ -17,7 +17,7 @@
           v-model="rattails"
           markers
           :min="0"
-          :max="5"
+          :max="8"
           v-on:change="setcauldronposition"
           style="width: 240px;"
         />
