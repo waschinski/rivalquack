@@ -1,6 +1,7 @@
 export default {
   title: "Automa - Szarlatan z Pasikurowic",
-  variantby: "Aplikacja bazuje na nieoficjalnym wariancie solo stworzonym przez",
+  variantby:
+    "Aplikacja bazuje na nieoficjalnym wariancie solo stworzonym przez",
   quacksby: 'dla gry "Szarlatani z Pasikurowic" autora',
   implementedby: "Autor niniejszej aplikacji to",
   selectlevel: "Wybierz poziom trudności",
@@ -37,7 +38,8 @@ export default {
     "Jeżeli w Twoim kociołku znajdują się czarne znaczniki, sprawdź, czy pod polem punktowym Twojego przeciwnika widoczne są jakieś czarne znaczniki. Jeśli w Twoim kociołku jest ich więcej, otrzymaj nagrodę zgodnie z zasadami. Twój przeciwnik nigdy nie otrzymuje nagrody za czarne składniki. Następnie sprawdź zielone oraz fioletowe znaczniki zgodnie z podstawowymi zasadami.",
   evalrubies:
     "Rubiny zdobywasz tak, jak w podstawowej grze. Twój przeciwnik również zdobywa rubiny - aplikacja zajmuje się tym automatycznie.",
-  evalscorepoints: "Zdobądź punkty za rundę - aplikacja automatycznie liczy ilość punktów Twojego przeciwnika.",
+  evalscorepoints:
+    "Zdobądź punkty za rundę - aplikacja automatycznie liczy ilość punktów Twojego przeciwnika.",
   evalbuyingredients:
     "Kupuj składniki zgodnie z podstawowymi zasadami. Twój przeciwnik rośnie w siłę automatycznie w trakcie trwania rozgrywki. W rundzie 9, zamiast zakupów, Twój przeciwnik automatycznie przeliczy wartość pola punktowego na punkty zwycięstwa (za każde 5 monet otrzyma 1 punkt zwycięstwa). Dokładnie tak samo przelicz swoje monety na punkty zwycięstwa w ostatniej rundzie.",
   evalspendrubies:

@@ -1,5 +1,8 @@
 <template>
-  <q-page class="q-pa-none app-page">
+  <q-page
+    class="q-pa-none app-page"
+    style="background-image: url('parchment.png');"
+  >
     <div class="body">
       <div class="rival">
         <img src="rival.png" style="width: 140px;" />

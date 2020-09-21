@@ -1,5 +1,8 @@
 <template>
-  <q-page class="q-pa-sm app-page">
+  <q-page
+    class="q-pa-sm app-page"
+    style="background-image: url('parchment.png');"
+  >
     <div class="body">
       <div class="title">{{ $t("solorules") }}</div>
       <p></p>
