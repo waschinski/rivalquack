@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="magnifier">
-      <img src="statics/magnifier.png" style="width: 240px;" />
+      <img src="magnifier.png" style="width: 240px;" />
     </div>
     <div class="space">
       <img
         class="space"
-        :src="'statics/space_' + currentRoundData.id + '.png'"
+        :src="'space_' + currentRoundData.id + '.png'"
         style="width: 116px;"
       />
     </div>
@@ -25,10 +25,10 @@
     </div>
     <div id="beatthat">{{ $t("beatrival") }}</div>
     <div class="blackchip1">
-      <img src="statics/blackchip.png" v-if="currentBlackChips > 0" />
+      <img src="blackchip.png" v-if="currentBlackChips > 0" />
     </div>
     <div class="blackchip2">
-      <img src="statics/blackchip.png" v-if="currentBlackChips > 1" />
+      <img src="blackchip.png" v-if="currentBlackChips > 1" />
     </div>
   </div>
 </template>

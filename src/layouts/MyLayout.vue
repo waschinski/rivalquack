@@ -13,7 +13,7 @@
       <div class="q-px-lg q-pt-none q-mb-md">
         <div class="header">{{ $t("title") }}</div>
       </div>
-      <q-img src="statics/quedlinburg.jpg" class="header-image absolute-top" />
+      <q-img src="quedlinburg.jpg" class="header-image absolute-top" />
     </q-header>
 
     <q-drawer

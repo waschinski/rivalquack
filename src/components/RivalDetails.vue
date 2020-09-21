@@ -14,7 +14,7 @@
       <div class="droplet">{{ $t("droplet") }} @ {{ dropletPosition }}</div>
     </div>
     <div class="ruby" v-if="rubies == 1">
-      <img src="statics/ruby.png" />
+      <img src="ruby.png" />
     </div>
   </div>
 </template>

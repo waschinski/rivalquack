@@ -1,7 +1,7 @@
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
 
-module.exports = function(ctx) {
+module.exports = function (ctx) {
   return {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
@@ -15,7 +15,7 @@ module.exports = function(ctx) {
     extras: [
       // 'ionicons-v4',
       // 'mdi-v4',
-      'fontawesome-v5',
+      "fontawesome-v5",
       // 'eva-icons',
       // 'themify',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
@@ -29,24 +29,21 @@ module.exports = function(ctx) {
       iconSet: "fontawesome-v5", // Quasar icon set
       lang: "en-us", // Quasar language pack
 
-      // Possible values for "all":
+      // Possible values for "importStrategy":
       // * 'auto' - Auto-import needed Quasar components & directives
       //            (slightly higher compile time; next to minimum bundle size; most convenient)
       // * false  - Manually specify what to import
       //            (fastest compile time; minimum bundle size; most tedious)
       // * true   - Import everything from Quasar
       //            (not treeshaking Quasar; biggest bundle size; convenient)
-      all: "auto",
+      importStrategy: "auto",
 
       components: [],
       directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: [],
     },
-
-    // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
-    supportIE: false,
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
@@ -67,24 +64,24 @@ module.exports = function(ctx) {
           loader: "eslint-loader",
           exclude: /node_modules/,
           options: {
-            formatter: require("eslint").CLIEngine.getFormatter("stylish")
-          }
-        });
+            formatter: require("eslint").CLIEngine.getFormatter("stylish"),
+          },
+        })
         cfg.module.rules.push({
           resourceQuery: /blockType=i18n/,
           use: [
             { loader: "@kazupon/vue-i18n-loader" },
-            { loader: "yaml-loader" }
-          ]
-        });
-      }
+            { loader: "yaml-loader" },
+          ],
+        })
+      },
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
       https: false,
       port: 8080,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
     },
 
     // animations: 'all', // --- includes all animations
@@ -93,7 +90,7 @@ module.exports = function(ctx) {
 
     // https://quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
-      pwa: false
+      pwa: false,
     },
 
     // https://quasar.dev/quasar-cli/developing-pwa/configuring-pwa
@@ -111,43 +108,43 @@ module.exports = function(ctx) {
         theme_color: "#027be3",
         icons: [
           {
-            src: "statics/icons/icon-128x128.png",
+            src: "icons/icon-128x128.png",
             sizes: "128x128",
-            type: "image/png"
+            type: "image/png",
           },
           {
-            src: "statics/icons/icon-192x192.png",
+            src: "icons/icon-192x192.png",
             sizes: "192x192",
-            type: "image/png"
+            type: "image/png",
           },
           {
-            src: "statics/icons/icon-256x256.png",
+            src: "icons/icon-256x256.png",
             sizes: "256x256",
-            type: "image/png"
+            type: "image/png",
           },
           {
-            src: "statics/icons/icon-384x384.png",
+            src: "icons/icon-384x384.png",
             sizes: "384x384",
-            type: "image/png"
+            type: "image/png",
           },
           {
-            src: "statics/icons/icon-512x512.png",
+            src: "icons/icon-512x512.png",
             sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
+            type: "image/png",
+          },
+        ],
+      },
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
     cordova: {
       // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
-      id: "org.cordova.quasar.app"
+      id: "org.cordova.quasar.app",
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
     capacitor: {
-      hideSplashscreen: true
+      hideSplashscreen: true,
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
@@ -168,7 +165,7 @@ module.exports = function(ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: "rivalquack"
+        appId: "rivalquack",
       },
 
       // keep in sync with /src-electron/main-process/electron-main
@@ -179,7 +176,7 @@ module.exports = function(ctx) {
       extendWebpack(cfg) {
         // do something with Electron main process Webpack cfg
         // chainWebpack also available besides this extendWebpack
-      }
-    }
-  };
-};
+      },
+    },
+  }
+}

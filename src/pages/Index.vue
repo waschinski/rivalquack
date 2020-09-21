@@ -2,7 +2,7 @@
   <q-page class="q-pa-none app-page">
     <div class="body">
       <div class="rival">
-        <img src="statics/rival.png" style="width: 140px;" />
+        <img src="rival.png" style="width: 140px;" />
       </div>
       <select-difficulty v-if="newGame === true" />
       <rival-details v-if="newGame === false && gameover === false" />

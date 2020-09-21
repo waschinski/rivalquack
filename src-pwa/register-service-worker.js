@@ -1,4 +1,4 @@
-import { register } from "register-service-worker";
+import { register } from "register-service-worker"
 
 // The ready(), registered(), cached(), updatefound() and updated()
 
@@ -42,4 +42,4 @@ register(process.env.SERVICE_WORKER_FILE, {
   error(/* err */) {
     // console.error('Error during service worker registration:', err)
   },
-});
+})
