@@ -9,7 +9,7 @@ export default {
   droplet: "Droplet",
   ratstone: "Rat stone",
   addrattails: "Add rat tails when you are in lead",
-  beatrival: "Do you beat your rival?",
+  beatrival: "Do you catch your rival?",
   score: "Score",
   round: "Round",
   newgame: "New Game",
