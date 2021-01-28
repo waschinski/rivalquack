@@ -22,7 +22,7 @@
     "@quasar/app": "^2.1.14",
     "@vue/eslint-config-prettier": "^6.0.0",
     "devtron": "^1.4.0",
-    "electron": "^8.2.5",
+    "electron": "^9.4.0",
     "electron-debug": "^3.0.1",
     "electron-devtools-installer": "^3.0.0",
     "electron-packager": "^15.1.0",
