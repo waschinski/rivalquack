@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",
-    "@quasar/app": "^2.1.14",
+    "@quasar/app": "^2.4.3",
     "@vue/eslint-config-prettier": "^6.0.0",
     "devtron": "^1.4.0",
     "electron": "^18.3.7",
