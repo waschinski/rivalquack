@@ -5,7 +5,10 @@
   >
     <div class="body">
       <div class="rival">
-        <img src="rival.png" style="width: 140px;" />
+        <img
+          src="rival.png"
+          style="width: 140px;"
+        >
       </div>
       <select-difficulty v-if="newGame === true" />
       <rival-details v-if="newGame === false && gameover === false" />
@@ -45,10 +48,10 @@ export default {
     }),
   },
   created() {
-    this.$root.$on("nextButtonClicked", this.nextRound)
+    this.$bus.on("nextButtonClicked", () => { this.nextRound() }, this)
   },
-  beforeDestroy() {
-    this.$root.$off("nextButtonClicked", this.nextRound)
+  beforeUnmount() {
+    this.$bus.off("nextButtonClicked", () => { this.nextRound() }, this)
   },
   methods: {
     nextRound() {

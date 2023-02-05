@@ -1,34 +1,47 @@
 <template>
   <div>
     <div class="magnifier">
-      <img src="magnifier.png" style="width: 240px;" />
+      <img
+        src="magnifier.png"
+        style="width: 240px;"
+      >
     </div>
     <div class="space">
       <img
         class="space"
         :src="'space_' + currentRoundData.id + '.png'"
         style="width: 116px;"
-      />
+      >
     </div>
     <div class="column">
-      <div id="rattails">{{ $t("addrattails") }}: {{ rattails }}</div>
+      <div id="rattails">
+        {{ $t("addrattails") }}: {{ rattails }}
+      </div>
       <div class="q-px-md">
         <q-slider
           v-model="rattails"
           markers
           :min="0"
           :max="8"
-          v-on:change="setcauldronposition"
+          @change="setcauldronposition"
           style="width: 240px;"
         />
       </div>
     </div>
-    <div id="beatthat">{{ $t("beatrival") }}</div>
+    <div id="beatthat">
+      {{ $t("beatrival") }}
+    </div>
     <div class="blackchip1">
-      <img src="blackchip.png" v-if="currentBlackChips > 0" />
+      <img
+        src="blackchip.png"
+        v-if="currentBlackChips > 0"
+      >
     </div>
     <div class="blackchip2">
-      <img src="blackchip.png" v-if="currentBlackChips > 1" />
+      <img
+        src="blackchip.png"
+        v-if="currentBlackChips > 1"
+      >
     </div>
   </div>
 </template>

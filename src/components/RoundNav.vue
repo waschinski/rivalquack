@@ -5,7 +5,7 @@
       class="q-px-md q-py-xs"
       size="md"
       :label="label"
-      v-on:click="buttonclick"
+      @click="buttonclick"
     />
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     buttonclick() {
-      this.$root.$emit("nextButtonClicked")
+      this.$bus.emit("nextButtonClicked")
     },
   },
   watch: {

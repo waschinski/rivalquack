@@ -1,6 +1,9 @@
 <template>
   <div class="round">
-    <img :src="'round_' + round + '.png'" style="width: 80px;" />
+    <img
+      :src="'round_' + round + '.png'"
+      style="width: 80px;"
+    >
   </div>
 </template>
 

@@ -11,9 +11,14 @@
         />
       </q-toolbar>
       <div class="q-px-lg q-pt-none q-mb-md">
-        <div class="header">{{ $t("title") }}</div>
+        <div class="header">
+          {{ $t("title") }}
+        </div>
       </div>
-      <q-img src="quedlinburg.jpg" class="header-image absolute-top" />
+      <q-img
+        src="quedlinburg.jpg"
+        class="header-image absolute-top"
+      />
     </q-header>
 
     <q-drawer
@@ -21,26 +26,41 @@
       side="left"
       overlay
       bordered
-      content-class="bg-grey-3"
+      class="bg-grey-3"
       :width="200"
     >
       <q-scroll-area class="fit">
         <q-list padding>
-          <q-item clickable v-ripple to="/" exact>
+          <q-item
+            clickable
+            v-ripple
+            to="/"
+            exact
+          >
             <q-item-section avatar>
               <q-icon name="fas fa-user" />
             </q-item-section>
             <q-item-section>{{ $t("play") }}</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/rules" exact>
+          <q-item
+            clickable
+            v-ripple
+            to="/rules"
+            exact
+          >
             <q-item-section avatar>
               <q-icon name="fas fa-book" />
             </q-item-section>
             <q-item-section>{{ $t("solorules") }}</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/info" exact>
+          <q-item
+            clickable
+            v-ripple
+            to="/info"
+            exact
+          >
             <q-item-section avatar>
-              <q-icon name="fas  fa-info-circle" />
+              <q-icon name="fas fa-info-circle" />
             </q-item-section>
             <q-item-section>{{ $t("info") }}</q-item-section>
           </q-item>
@@ -49,9 +69,11 @@
     </q-drawer>
 
     <q-page-container>
-      <keep-alive>
-        <router-view />
-      </keep-alive>
+      <router-view v-slot="{ Component }">
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
+      </router-view>
     </q-page-container>
   </q-layout>
 </template>
