@@ -4,8 +4,10 @@
     style="background-image: url('parchment.png');"
   >
     <div class="body">
-      <div class="title">{{ $t("solorules") }}</div>
-      <p></p>
+      <div class="title">
+        {{ $t("solorules") }}
+      </div>
+      <p />
       <div class="text-bold">
         {{ $t("setup") }}
       </div>

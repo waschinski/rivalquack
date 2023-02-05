@@ -1,9 +1,6 @@
-import Vue from "vue"
-import Vuex from "vuex"
+import { createStore } from 'vuex'
 
 import gamedata from "./GameData"
-
-Vue.use(Vuex)
 
 /*
  * If not building with SSR mode, you can
@@ -15,7 +12,7 @@ Vue.use(Vuex)
  */
 
 export default function () {
-  const Store = new Vuex.Store({
+  const Store = createStore({
     modules: {
       gamedata,
     },

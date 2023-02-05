@@ -1,6 +1,8 @@
 <template>
   <div style="width: 100%;">
-    <div class="difficulty select">{{ $t("endresult") }}</div>
+    <div class="difficulty select">
+      {{ $t("endresult") }}
+    </div>
     <div class="row justify-center">
       <div class="difficulty difficultylevel">
         {{ $t("level") }}
@@ -8,16 +10,19 @@
       </div>
     </div>
     <div class="row justify-center">
-      <div class="victorypoints">{{ $t("vp") }}: {{ victoryPoints }}</div>
+      <div class="victorypoints">
+        {{ $t("vp") }}: {{ victoryPoints }}
+      </div>
     </div>
     <div class="roundnav">
       <q-btn
         color="primary"
         class="q-px-md q-py-xs"
         size="md"
-        v-on:click="buttonclick"
-        >{{ $t("newgame") }}</q-btn
+        @click="buttonclick"
       >
+        {{ $t("newgame") }}
+      </q-btn>
     </div>
   </div>
 </template>
